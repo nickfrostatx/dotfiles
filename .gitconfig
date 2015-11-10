@@ -2,6 +2,6 @@
     name = Nick Frost
     email = nickfrostatx@gmail.com
 [core]
-    excludesfile = /Users/nick/.gitignore
+    excludesfile = /Users/nick/.gitignore_global
 [push]
     default = simple
