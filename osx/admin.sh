@@ -3,6 +3,9 @@
 HB_USER=nick
 HB_GROUP=staff
 
+echo "Authenticating with sudo for $USER"
+sudo -v
+
 if ! which brew > /dev/null; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew update
