@@ -9,7 +9,7 @@ brew cask update
 brew install gcc git gnupg node optipng pyenv pyenv-virtualenv vim zopfli zsh
 
 # Install casks
-brew cask install google-chrome kodi limechat sublime-text vlc
+brew cask install google-chrome kodi limechat sublime-text transmission vlc
 
 # Clean up
 brew prune
