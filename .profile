@@ -1,6 +1,8 @@
 # Aliases
 source ~/.aliases
 
+[ -d ~/.bin ] && export PATH="$PATH:$HOME/.bin"
+
 # Dotfiles
 dotfiles() {
   (cd ~/.dotfiles && git pull && ./copy.sh)
