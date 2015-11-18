@@ -11,6 +11,7 @@ if ! which brew > /dev/null; then
     brew update
     brew install zsh caskroom/cask/brew-cask
     brew cask update
+    brew cask install virtualbox
     echo "Fixing homebrew permissions"
     sudo chown -R -v $HB_USER:$HB_GROUP /usr/local /opt/homebrew-cask /Library/Caches/Homebrew
 fi
