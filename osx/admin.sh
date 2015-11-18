@@ -13,7 +13,6 @@ if ! which brew > /dev/null; then
     brew cask update
     echo "Fixing homebrew permissions"
     sudo chown -R -v $HB_USER:$HB_GROUP /usr/local /opt/homebrew-cask /Library/Caches/Homebrew
-    sudo chmod 755 -v /opt/homebrew-cask
 fi
 
 if ! grep ^/usr/local/bin/zsh$ /etc/shells > /dev/null; then
