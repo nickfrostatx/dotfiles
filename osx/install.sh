@@ -8,7 +8,7 @@ if [ ! -d $(xcode-select -print-path 2>/dev/null) ]; then
     read -k1 -s
 fi
 
-if [ ! -e ~/.dotfiles ]; then
+if [ ! -d ~/.dotfiles ]; then
     git clone git@github.com:nickfrostatx/dotfiles.git ~/.dotfiles
 fi
 
