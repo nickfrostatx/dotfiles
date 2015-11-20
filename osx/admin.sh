@@ -21,6 +21,8 @@ if ! grep ^/usr/local/bin/zsh$ /etc/shells > /dev/null; then
     sudo echo /usr/local/bin/zsh >> /etc/shells
 fi
 
-echo "Enforcing FileVault hibernation."
-sudo pmset -a destroyfvkeyonstandby 1
-sudo pmset -a hibernatemode 25
+if [[ "$(fdesetup status)" == "FileVault is On." ]]; then
+    echo "Enforcing FileVault hibernation."
+    sudo pmset -a destroyfvkeyonstandby 1
+    sudo pmset -a hibernatemode 25
+fi
