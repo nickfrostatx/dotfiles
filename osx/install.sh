@@ -2,7 +2,7 @@
 ADMINUSER=hal
 set -e
 
-if [ ! -d xcode-select -print-path 2>/dev/null ]; then
+if [ ! -d $(xcode-select -print-path 2>/dev/null) ]; then
     xcode-select --install
     echo 'Press any key when the installation has completed.'
     read -k1 -s
