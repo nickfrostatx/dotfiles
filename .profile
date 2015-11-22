@@ -8,6 +8,9 @@ dotfiles() {
   (cd ~/.dotfiles && git pull && ./copy.sh)
 }
 
+# Editor
+export EDITOR=vim
+
 # Python
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
