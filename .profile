@@ -19,3 +19,6 @@ VIRTUAL_ENV_DISABLE_PROMPT=true
 syspip() {
   PIP_REQUIRE_VIRTUALENV='' pip $@
 }
+syspip3() {
+  PIP_REQUIRE_VIRTUALENV='' pip3 $@
+}
