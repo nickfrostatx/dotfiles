@@ -7,4 +7,4 @@ done
 pyenv rehash
 pyenv global 2.7.10 3.5.0
 
-PYENV_VERSION=3.5.0 $HOME/.pyenv/shims/pip install --upgrade httpie tox
+PYENV_VERSION=3.5.0 $HOME/.pyenv/shims/pip install --upgrade cookiecutter httpie tox
