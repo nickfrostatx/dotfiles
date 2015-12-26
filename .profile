@@ -11,9 +11,6 @@ dotfiles() {
 # Editor
 export EDITOR=vim
 
-# Docker
-eval "$(docker-machine env default)"
-
 # Python
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
