@@ -4,3 +4,4 @@ sphinxsearch
 .python-version
 run-local.py
 dump.rdb
+/notes
