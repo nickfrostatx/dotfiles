@@ -8,6 +8,15 @@ dotfiles() {
   (cd ~/.dotfiles && git pull && ./copy.sh)
 }
 
+# Minecraft local port forwarding
+minecraft() {
+  HOST="$1"
+  if [ -z "$HOST" ]; then
+    HOST=phoenix
+  fi
+  ssh -N -L 25565:localhost:25565 "$HOST"
+}
+
 # Editor
 export EDITOR=vim
 
