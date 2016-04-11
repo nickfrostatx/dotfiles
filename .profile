@@ -20,6 +20,9 @@ minecraft() {
 # Editor
 export EDITOR=vim
 
+# Go
+export GOPATH=$HOME/go
+
 # Python
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
