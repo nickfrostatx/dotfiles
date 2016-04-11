@@ -5,3 +5,5 @@ sphinxsearch
 run-local.py
 dump.rdb
 /notes
+localhost.crt
+localhost.key
