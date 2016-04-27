@@ -23,10 +23,13 @@ export EDITOR=vim
 # Go
 export GOPATH=$HOME/go
 
+export HOMEBREW_NO_ANALYTICS=true
+
 # Python
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export PIP_REQUIRE_VIRTUALENV=true
+VIRTUAL_ENV_DISABLE_PROMPT=true
 syspip() {
   PIP_REQUIRE_VIRTUALENV='' pip $@
 }
