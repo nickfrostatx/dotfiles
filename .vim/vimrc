@@ -1,3 +1,8 @@
+execute pathogen#infect()
+
+let g:netrw_dirhistmax = 0
+set nobackup
+
 set smartindent
 set tabstop=4
 set shiftwidth=4
@@ -9,9 +14,6 @@ autocmd Filetype c,cpp setlocal tabstop=3 shiftwidth=3
 autocmd Filetype make setlocal noexpandtab
 
 set number
-
-syntax on
-
-if filereadable(".vim.custom")
-    so .vim.custom
-endif
+syntax enable
+set background=dark
+colorscheme solarized
