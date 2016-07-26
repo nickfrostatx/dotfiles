@@ -1,21 +1,6 @@
 # Aliases
-source ~/.aliases
-
-[ -d ~/.bin ] && export PATH="$PATH:$HOME/.bin"
-
-# Dotfiles
-dotfiles() {
-  (cd ~/.dotfiles && git pull && ./copy.sh)
-}
-
-# Minecraft local port forwarding
-minecraft() {
-  HOST="$1"
-  if [ -z "$HOST" ]; then
-    HOST=phoenix
-  fi
-  ssh -N -L 25565:localhost:25565 "$HOST"
-}
+alias l='ls -lah'
+alias refresh='brew update && brew upgrade --all && brew cleanup --force -s && brew prune && upgrade_oh_my_zsh'
 
 # Editor
 export EDITOR=vim
@@ -26,10 +11,7 @@ export GOPATH=$HOME/go
 export HOMEBREW_NO_ANALYTICS=true
 
 # Python
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 export PIP_REQUIRE_VIRTUALENV=true
-VIRTUAL_ENV_DISABLE_PROMPT=true
 syspip() {
   PIP_REQUIRE_VIRTUALENV='' pip $@
 }

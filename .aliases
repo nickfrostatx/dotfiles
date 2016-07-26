@@ -1,4 +1,0 @@
-#!/usr/bin/bash
-alias brews='brew update && brew upgrade --all && brew cleanup --force -s && brew prune && brew cask cleanup'
-alias l='ls -lah'
-alias vi=vim 

@@ -7,3 +7,4 @@ dump.rdb
 /notes
 localhost.crt
 localhost.key
+venv

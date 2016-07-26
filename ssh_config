@@ -1,0 +1,7 @@
+Host *
+    IdentitiesOnly yes
+    ChallengeResponseAuthentication no
+    HashKnownHosts yes
+
+# Host github.com
+#    IdentityFile ~/.ssh/github
