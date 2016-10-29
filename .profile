@@ -1,6 +1,6 @@
 # Aliases
 alias l='ls -lah'
-alias refresh='brew update && brew upgrade --all && brew cleanup --force -s && brew prune && upgrade_oh_my_zsh'
+alias refresh='brew update && brew upgrade && brew cleanup --force -s && brew prune && upgrade_oh_my_zsh'
 
 # Editor
 export EDITOR=vim
